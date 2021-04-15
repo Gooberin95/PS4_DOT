@@ -12,7 +12,7 @@ class MyController(Controller):
 
         global i#important
         i += 1
-        set_pixel(i,255,255,255)
+        set_pixel(i,255,0,0)
         show()
         clear()
 
@@ -22,7 +22,7 @@ class MyController(Controller):
     def on_L1_press(self):
         global i#important
         i -= 1
-        set_pixel(i,255,255,255)
+        set_pixel(i,255,0,0)
         show()
         clear()
 
@@ -33,7 +33,7 @@ def back():
     global i #important
     while i >= 0 :
 
-        set_pixel(i, 255, 255, 255)
+        set_pixel(i, 255, 0, 0)
         show()
         on_R1_press(self)
         clear()
@@ -44,7 +44,7 @@ def forward():
     global i#important
     while i < 7:
 
-        set_pixel(i, 255, 255, 255)
+        set_pixel(i, 255, 0, 0)
         show()
         on_R1_press()
         clear()
